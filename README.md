@@ -28,7 +28,7 @@ This project demonstrates how to render dashboards from your Bold BI server usin
     ![Embed Settings Download](/images/download-embedsecretkey.png)
     ![EmbedConfig Properties](/images/embedconfig-file.png)
 
-* Copy the downloaded `embedConfig.json` into the project at the expected location (the sample's `Angular` and `Nodejs` folders include examples of where to place it). 
+* Copy the downloaded `embedConfig.json` into the project at the expected location (the sample's `angular` and `nodejs` folders include examples of where to place it). 
 
     ![EmbedConfig image](/images/embedconfig-location.png)
 
@@ -36,11 +36,11 @@ This project demonstrates how to render dashboards from your Bold BI server usin
 
 ### NodeJS backend (API)
 
-1. Open a terminal and navigate to the `Nodejs` folder.
+1. Open a terminal and navigate to the `nodejs` folder.
 2. Install dependencies:
 
 ```bash
-cd Nodejs
+cd nodejs
 npm install
 ```
 
@@ -58,7 +58,7 @@ The server will listen on the port configured in `embed.js` and expose the embed
 2. Install dependencies:
 
 ```bash
-cd Angular
+cd angular
 npm install
 ```
 
@@ -76,24 +76,14 @@ The Angular app typically runs at `http://localhost:4200` — open that URL in y
 
 ### NodeJS backend via VS Code
 
-1. Open the integrated terminal, navigate to `Nodejs`, and run `npm install`.
+1. Open the integrated terminal, navigate to `nodejs`, and run `npm install`.
 2. Start the server with `node embed.js`.
 
 ### Angular frontend via VS Code
 
-1. Open the integrated terminal, navigate to `Angular`, and run `npm install`.
+1. Open the integrated terminal, navigate to `angular`, and run `npm install`.
 2. Start the frontend with `npm start`.
-
-Please refer to the official help documentation for additional details: https://help.boldbi.com/embedding-options/embedding-sdk/samples/angular-with-javascript/#how-to-run-the-sample?utm_source=github&utm_medium=backlinks
 
 ## Important notes
 
 Do not store passwords or other sensitive information in configuration files in production. Use a secure secret store (for example, Key Vault) to protect credentials.
-
-## Online demos
-
-Live demo: https://samples.boldbi.com/embed?utm_source=github&utm_medium=backlinks
-
-## Documentation
-
-Full Bold BI Embedding documentation: https://help.boldbi.com/embedded-bi/javascript-based/?utm_source=github&utm_medium=backlinks

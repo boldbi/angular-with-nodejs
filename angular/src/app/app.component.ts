@@ -7,7 +7,7 @@ import { appService } from './app.service';
   selector: 'app-root',
   standalone: true, 
   imports: [RouterModule, HttpClientModule],
-  templateUrl: './app.component.html',
+  template: '<router-outlet></router-outlet>',
   styleUrls: ['./app.component.css']
 })
 
@@ -28,7 +28,7 @@ export class AppComponent {
 
   public baseUrl: any;
 
-  public dashboardServerApiUrl!: string;
+  public dashboardServerApiUrl = '';
 
   constructor(private _app: appService) {
   }
